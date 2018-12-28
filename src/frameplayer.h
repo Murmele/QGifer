@@ -63,11 +63,11 @@ public:
     }
 
     int estimateInterval() {
-        return vcap.isOpened() ? round(1000.0 / vcap.get(CV_CAP_PROP_FPS)) : 0;
+        return vcap.isOpened() ? round(1000.0 / vcap.get(CAP_PROP_FPS)) : 0;
     }
 
     double fps() {
-        return vcap.isOpened() ? vcap.get(CV_CAP_PROP_FPS) : 0;
+        return vcap.isOpened() ? vcap.get(CAP_PROP_FPS) : 0;
     }
 
     bool isOpened() {
